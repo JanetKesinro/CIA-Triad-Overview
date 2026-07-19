@@ -16,11 +16,11 @@ function App() {
   return (
     <div className="container">
       
-      {/* Slide 9 Content: How do we protect each one? */}
+      {/* Strategies for Defense Section */}
       <section className="slide-section">
         <div className="section-header">
-          <h1>How do we protect each one?</h1>
-          <p>Every tool in cybersecurity protects at least one of these three.</p>
+          <h1>Safeguarding the Triad</h1>
+          <p>All security mechanisms are fundamentally designed to uphold one or more of these core pillars.</p>
         </div>
 
         <div className="columns-3">
@@ -30,11 +30,11 @@ function App() {
               <Badge letter="C" type="c" />
               <h3>Confidentiality</h3>
             </div>
-            <div className="sub-header">We protect it with:</div>
+            <div className="sub-header">Key Defenses:</div>
             <ul className="feature-list">
-              <li>Passwords</li>
-              <li>Encryption</li>
-              <li>Locked doors</li>
+              <li>Strong Authentication</li>
+              <li>Data Obfuscation</li>
+              <li>Physical Security Measures</li>
             </ul>
           </div>
 
@@ -44,11 +44,11 @@ function App() {
               <Badge letter="I" type="i" />
               <h3>Integrity</h3>
             </div>
-            <div className="sub-header">We protect it with:</div>
+            <div className="sub-header">Key Defenses:</div>
             <ul className="feature-list">
-              <li>Checksums</li>
-              <li>Digital signatures</li>
-              <li>Audit logs</li>
+              <li>File Hashing</li>
+              <li>Cryptographic Signatures</li>
+              <li>Activity Monitoring</li>
             </ul>
           </div>
 
@@ -58,66 +58,66 @@ function App() {
               <Badge letter="A" type="a" />
               <h3>Availability</h3>
             </div>
-            <div className="sub-header">We protect it with:</div>
+            <div className="sub-header">Key Defenses:</div>
             <ul className="feature-list">
-              <li>Backups</li>
-              <li>Extra servers</li>
-              <li>DDoS protection</li>
+              <li>Data Restoration Plans</li>
+              <li>Redundant Infrastructure</li>
+              <li>Traffic Filtering</li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* Slide 8 Content: Availability Example */}
+      {/* Real-World Application Section */}
       <section className="slide-section">
         <div className="section-header">
           <h2>
             <Badge letter="A" type="a" small /> 
-            At the bank, this means…
+            Real-World Application: Financial Sector
           </h2>
         </div>
 
         <div className="comparison-grid">
-          {/* Good Examples */}
+          {/* Optimal Examples */}
           <div>
             <ul className="list-good feature-list">
               <li>
                 <Check className="icon-success" size={24} />
-                <span>The app loads when you open it.</span>
+                <span>Mobile banking platforms remain highly responsive.</span>
               </li>
               <li>
                 <Check className="icon-success" size={24} />
-                <span>ATMs work day and night.</span>
+                <span>Cash dispensing networks operate 24/7 without interruption.</span>
               </li>
               <li>
                 <Check className="icon-success" size={24} />
-                <span>The branch is open as scheduled.</span>
+                <span>Physical branches maintain consistent operational hours.</span>
               </li>
               <li>
                 <Check className="icon-success" size={24} />
-                <span>Backups run if something fails.</span>
+                <span>Automated failover systems instantly recover lost states.</span>
               </li>
             </ul>
           </div>
 
-          {/* Broken Examples */}
+          {/* Critical Failures */}
           <div>
             <ul className="list-broken feature-list">
               <li>
                 <X className="icon-error" size={24} />
-                <span>App crashes when you log in.</span>
+                <span>Authentication portals experience frequent timeouts.</span>
               </li>
               <li>
                 <X className="icon-error" size={24} />
-                <span>ATM is offline all weekend.</span>
+                <span>Terminal networks suffer prolonged service outages.</span>
               </li>
               <li>
                 <X className="icon-error" size={24} />
-                <span>Servers crash from an attack.</span>
+                <span>Core infrastructure succumbs to targeted overloads.</span>
               </li>
               <li>
                 <X className="icon-error" size={24} />
-                <span>No backup, so data is lost.</span>
+                <span>Critical transaction records vanish permanently.</span>
               </li>
             </ul>
           </div>
