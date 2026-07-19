@@ -12,7 +12,7 @@ The CIA Triad is the foundation behind many cybersecurity controls, policies, an
 - **Integrity:** Keep information correct.
 - **Availability:** Keep systems and information accessible when needed.
 
-The presentation uses relatable banking scenarios to show what each pillar looks like when it is protected and when it is broken.
+The interactive web application uses relatable banking scenarios to show what each pillar looks like when it is protected and when it is broken.
 
 ## Learning Objectives
 
@@ -69,7 +69,7 @@ Cybersecurity terminology can sound complex when it is introduced without contex
 - Cybersecurity fundamentals
 - Security awareness training
 - Technical communication
-- Presentation design
+- Web application development
 - Risk scenario analysis
 - Translating technical concepts for nontechnical audiences
 
@@ -77,8 +77,6 @@ Cybersecurity terminology can sound complex when it is introduced without contex
 
 - Add an interactive web-based quiz
 - Include more workplace and cloud-security scenarios
-- Add speaker notes for instructors
-- Create a downloadable PDF handout
 - Map examples to NIST Cybersecurity Framework functions
 
 ## Author
@@ -86,6 +84,15 @@ Cybersecurity terminology can sound complex when it is introduced without contex
 **Janet Kesinro**
 
 Cybersecurity professional focused on vulnerability management, risk, security education, and practical security solutions.
+
+## Running Locally
+
+To run this web application locally, ensure you have Node.js installed, then run the following commands:
+
+```bash
+npm install
+npm run dev
+```
 
 ## License
 
