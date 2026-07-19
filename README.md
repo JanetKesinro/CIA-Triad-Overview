@@ -1,5 +1,7 @@
 # CIA Triad Cybersecurity Refresher 🔐
 
+![CIA Triad Infographic](public/cia_triad_infographic.png)
+
 A beginner-friendly cybersecurity awareness project that explains the **CIA Triad**—Confidentiality, Integrity, and Availability—using simple banking examples.
 
 This project turns a core security concept into an easy-to-understand training resource for students, new cybersecurity professionals, and nontechnical audiences.
