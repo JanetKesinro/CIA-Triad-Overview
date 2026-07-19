@@ -1,114 +1,130 @@
 import React, { useEffect } from 'react';
-import { Lock, ShieldCheck, Server } from 'lucide-react';
+import { Check, X } from 'lucide-react';
 import './index.css';
 
-const TriadCard = ({ title, description, features, imageSrc, icon: Icon, color, delay }) => {
-  return (
-    <div 
-      className="triad-card" 
-      style={{ '--card-color': color, animationDelay: `${delay}s` }}
-    >
-      <div className="card-image-container">
-        <img src={imageSrc} alt={`${title} visualization`} className="card-image" />
-        <div className="card-icon">
-          <Icon size={28} />
-        </div>
-      </div>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <ul className="features">
-        {features.map((feature, idx) => (
-          <li key={idx}>
-            <ShieldCheck size={16} />
-            {feature}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+const Badge = ({ letter, type, small }) => (
+  <div className={`badge badge-${type} ${small ? 'badge-small' : ''}`}>
+    {letter}
+  </div>
+);
 
 function App() {
-  // Update document title for SEO
   useEffect(() => {
     document.title = "The CIA Triad | Cybersecurity Principles";
-    
-    // Add meta description if it doesn't exist
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.name = "description";
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.content = "Explore the CIA Triad of Cybersecurity: Confidentiality, Integrity, and Availability. Learn the core principles of information security.";
   }, []);
 
-  const triadData = [
-    {
-      title: 'Confidentiality',
-      description: 'Ensuring that sensitive information is accessed only by an authorized person and kept away from those not authorized to possess them.',
-      features: [
-        'Data Encryption (At rest & in transit)',
-        'Access Control Lists (ACLs)',
-        'Multi-Factor Authentication (MFA)'
-      ],
-      imageSrc: '/confidentiality.png',
-      icon: Lock,
-      color: 'var(--accent-c)',
-      delay: 0
-    },
-    {
-      title: 'Integrity',
-      description: 'Maintaining the consistency, accuracy, and trustworthiness of data over its entire life cycle. Data cannot be modified by unauthorized parties.',
-      features: [
-        'Cryptographic Checksums (Hashing)',
-        'File Integrity Monitoring (FIM)',
-        'Version Control & Backups'
-      ],
-      imageSrc: '/integrity.png',
-      icon: ShieldCheck,
-      color: 'var(--accent-i)',
-      delay: 0.2
-    },
-    {
-      title: 'Availability',
-      description: 'Ensuring that information and resources are available to those who need them, when they need them, without disruption.',
-      features: [
-        'Redundancy & Failover Systems',
-        'DDoS Mitigation Strategies',
-        'Regular Hardware Maintenance'
-      ],
-      imageSrc: '/availability.png',
-      icon: Server,
-      color: 'var(--accent-a)',
-      delay: 0.4
-    }
-  ];
-
   return (
-    <>
-      <div className="bg-gradients">
-        <div className="gradient-blob blob-c"></div>
-        <div className="gradient-blob blob-i"></div>
-        <div className="gradient-blob blob-a"></div>
-      </div>
+    <div className="container">
+      
+      {/* Slide 9 Content: How do we protect each one? */}
+      <section className="slide-section">
+        <div className="section-header">
+          <h1>How do we protect each one?</h1>
+          <p>Every tool in cybersecurity protects at least one of these three.</p>
+        </div>
 
-      <div className="container">
-        <header>
-          <h1>The CIA Triad</h1>
-          <p className="subtitle">
-            The foundational model for information security development. 
-            Discover the three core pillars that keep data safe in the modern digital landscape.
-          </p>
-        </header>
+        <div className="columns-3">
+          {/* Confidentiality Card */}
+          <div className="card">
+            <div className="card-header">
+              <Badge letter="C" type="c" />
+              <h3>Confidentiality</h3>
+            </div>
+            <div className="sub-header">We protect it with:</div>
+            <ul className="feature-list">
+              <li>Passwords</li>
+              <li>Encryption</li>
+              <li>Locked doors</li>
+            </ul>
+          </div>
 
-        <main className="triad-grid">
-          {triadData.map((item, index) => (
-            <TriadCard key={index} {...item} />
-          ))}
-        </main>
-      </div>
-    </>
+          {/* Integrity Card */}
+          <div className="card">
+            <div className="card-header">
+              <Badge letter="I" type="i" />
+              <h3>Integrity</h3>
+            </div>
+            <div className="sub-header">We protect it with:</div>
+            <ul className="feature-list">
+              <li>Checksums</li>
+              <li>Digital signatures</li>
+              <li>Audit logs</li>
+            </ul>
+          </div>
+
+          {/* Availability Card */}
+          <div className="card">
+            <div className="card-header">
+              <Badge letter="A" type="a" />
+              <h3>Availability</h3>
+            </div>
+            <div className="sub-header">We protect it with:</div>
+            <ul className="feature-list">
+              <li>Backups</li>
+              <li>Extra servers</li>
+              <li>DDoS protection</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Slide 8 Content: Availability Example */}
+      <section className="slide-section">
+        <div className="section-header">
+          <h2>
+            <Badge letter="A" type="a" small /> 
+            At the bank, this means…
+          </h2>
+        </div>
+
+        <div className="comparison-grid">
+          {/* Good Examples */}
+          <div>
+            <ul className="list-good feature-list">
+              <li>
+                <Check className="icon-success" size={24} />
+                <span>The app loads when you open it.</span>
+              </li>
+              <li>
+                <Check className="icon-success" size={24} />
+                <span>ATMs work day and night.</span>
+              </li>
+              <li>
+                <Check className="icon-success" size={24} />
+                <span>The branch is open as scheduled.</span>
+              </li>
+              <li>
+                <Check className="icon-success" size={24} />
+                <span>Backups run if something fails.</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Broken Examples */}
+          <div>
+            <ul className="list-broken feature-list">
+              <li>
+                <X className="icon-error" size={24} />
+                <span>App crashes when you log in.</span>
+              </li>
+              <li>
+                <X className="icon-error" size={24} />
+                <span>ATM is offline all weekend.</span>
+              </li>
+              <li>
+                <X className="icon-error" size={24} />
+                <span>Servers crash from an attack.</span>
+              </li>
+              <li>
+                <X className="icon-error" size={24} />
+                <span>No backup, so data is lost.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
   );
 }
 
