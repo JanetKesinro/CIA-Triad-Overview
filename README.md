@@ -12,6 +12,22 @@ The CIA Triad is the foundation behind many cybersecurity controls, policies, an
 
 The interactive web application uses relatable banking scenarios to show what each pillar looks like when it is protected and when it is broken.
 
+## Features
+
+- **Interactive UI**: A modern, responsive React-based interface with semantic HTML and accessibility in mind.
+- **CIA Pillar Breakdown**: Deep dives into Confidentiality, Integrity, and Availability with practical banking scenarios (Protected vs. Compromised).
+- **Security Controls**: Connects each pillar to real-world defensive controls like encryption, backups, and checksums.
+- **Career Pathways**: Outlines how the CIA triad maps to cybersecurity roles like Penetration Testers, Auditors, Program Managers, and Security Engineers.
+- **Knowledge Check Quiz**: Features an interactive 10-question quiz with dynamic scoring and detailed explanations for incorrect answers to reinforce learning.
+
+## Technologies Used
+
+- **React 18**
+- **TypeScript**
+- **Vite**
+- **CSS3 / Semantic HTML**
+- **Lucide Icons**
+
 ## Learning Objectives
 
 By the end of this refresher, learners should be able to:
@@ -20,14 +36,6 @@ By the end of this refresher, learners should be able to:
 2. Identify which CIA pillar is affected in a security scenario.
 3. Connect common cybersecurity controls to each pillar.
 4. Explain how cybersecurity roles help protect the CIA Triad.
-
-## Real-World Examples
-
-| Pillar | Protected Example | Compromised Example |
-|---|---|---|
-| Confidentiality | Only the account owner can view a bank balance | A stranger reads a bank statement |
-| Integrity | A transfer arrives exactly as it was sent | A transaction amount is secretly changed |
-| Availability | The banking app and ATMs remain operational | The app crashes or an ATM remains offline |
 
 ## Security Controls
 
@@ -44,9 +52,9 @@ Keeping systems available involves maintaining secure backups, building redundan
 
 The CIA Triad applies across many cybersecurity roles. Penetration Testers actively identify weaknesses that could expose, alter, or disrupt systems. Auditors are responsible for verifying that security controls and requirements are strictly followed. Meanwhile, Program Managers coordinate overarching security initiatives and risk-reduction efforts, and Security Engineers focus on designing and maintaining robust technical defenses.
 
-## Why I Created This
+## Screenshots
 
-Cybersecurity terminology can sound complex when it is introduced without context. I created this refresher to explain the CIA Triad in plain English and connect each concept to situations people already understand.
+> Add screenshots of the interactive quiz and the banking scenarios section here.
 
 ## Skills Demonstrated
 
@@ -54,7 +62,7 @@ This project demonstrates a solid understanding of cybersecurity fundamentals an
 
 ## Future Improvements
 
-Looking ahead, I plan to add an interactive web-based quiz and include more diverse workplace and cloud-security scenarios. I will also be mapping these practical examples directly to the NIST Cybersecurity Framework functions.
+Looking ahead, I plan to include more diverse workplace and cloud-security scenarios. I will also be mapping these practical examples directly to the NIST Cybersecurity Framework functions.
 
 ## Author
 
@@ -62,14 +70,25 @@ Looking ahead, I plan to add an interactive web-based quiz and include more dive
 
 Cybersecurity professional focused on vulnerability management, risk, security education, and practical security solutions.
 
-## Running Locally
+## Installation Instructions
 
 To run this web application locally, ensure you have Node.js installed, then run the following commands:
 
 ```bash
+git clone https://github.com/JanetKesinro/CIA-Triad-Overview.git
+cd CIA-Triad-Overview
 npm install
+```
+
+## Usage Instructions
+
+Start the local development server:
+
+```bash
 npm run dev
 ```
+
+Open your browser and navigate to `http://localhost:5173` to explore the interactive portfolio project and take the knowledge check quiz.
 
 ## License
 
