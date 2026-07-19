@@ -2,17 +2,13 @@
 
 ![CIA Triad Infographic](public/cia_triad_infographic.png)
 
-A beginner-friendly cybersecurity awareness project that explains the **CIA Triad**—Confidentiality, Integrity, and Availability—using simple banking examples.
+A beginner-friendly cybersecurity awareness project that explains the **CIA Triad** (Confidentiality, Integrity, and Availability) using simple banking examples.
 
 This project turns a core security concept into an easy-to-understand training resource for students, new cybersecurity professionals, and nontechnical audiences.
 
 ## Project Overview
 
-The CIA Triad is the foundation behind many cybersecurity controls, policies, and job responsibilities:
-
-- **Confidentiality:** Keep secrets secret.
-- **Integrity:** Keep information correct.
-- **Availability:** Keep systems and information accessible when needed.
+The CIA Triad is the foundation behind many cybersecurity controls, policies, and job responsibilities. At its core, Confidentiality is about keeping secrets secret, Integrity focuses on keeping information correct, and Availability ensures that systems and information remain accessible when needed.
 
 The interactive web application uses relatable banking scenarios to show what each pillar looks like when it is protected and when it is broken.
 
@@ -36,31 +32,17 @@ By the end of this refresher, learners should be able to:
 ## Security Controls
 
 ### Confidentiality
-- Passwords
-- Encryption
-- Physical access controls
-- Multifactor authentication
+We enforce confidentiality using tools like strong passwords, data encryption, physical access controls, and multifactor authentication.
 
 ### Integrity
-- Checksums
-- Digital signatures
-- Audit logs
-- Change monitoring
+To maintain integrity, professionals rely on checksums, digital signatures, detailed audit logs, and continuous change monitoring.
 
 ### Availability
-- Backups
-- Redundant systems
-- Disaster recovery
-- DDoS protection
+Keeping systems available involves maintaining secure backups, building redundant systems, planning for disaster recovery, and implementing robust DDoS protection.
 
 ## Cybersecurity Career Connection
 
-The CIA Triad applies across many cybersecurity roles:
-
-- **Penetration Testers** identify weaknesses that could expose, alter, or disrupt systems.
-- **Auditors** verify that security controls and requirements are followed.
-- **Program Managers** coordinate security initiatives and risk-reduction efforts.
-- **Security Engineers** design and maintain technical defenses.
+The CIA Triad applies across many cybersecurity roles. Penetration Testers actively identify weaknesses that could expose, alter, or disrupt systems. Auditors are responsible for verifying that security controls and requirements are strictly followed. Meanwhile, Program Managers coordinate overarching security initiatives and risk-reduction efforts, and Security Engineers focus on designing and maintaining robust technical defenses.
 
 ## Why I Created This
 
@@ -68,18 +50,11 @@ Cybersecurity terminology can sound complex when it is introduced without contex
 
 ## Skills Demonstrated
 
-- Cybersecurity fundamentals
-- Security awareness training
-- Technical communication
-- Web application development
-- Risk scenario analysis
-- Translating technical concepts for nontechnical audiences
+This project demonstrates a solid understanding of cybersecurity fundamentals and security awareness training. It also highlights strong technical communication and web application development skills, along with practical experience in risk scenario analysis and the ability to translate complex technical concepts for nontechnical audiences.
 
 ## Future Improvements
 
-- Add an interactive web-based quiz
-- Include more workplace and cloud-security scenarios
-- Map examples to NIST Cybersecurity Framework functions
+Looking ahead, I plan to add an interactive web-based quiz and include more diverse workplace and cloud-security scenarios. I will also be mapping these practical examples directly to the NIST Cybersecurity Framework functions.
 
 ## Author
 
